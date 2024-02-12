@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Valentine Date </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "style.css" >
+        <link rel = "icon" href = "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/55623/smiling-face-with-hearts-emoji-clipart-md.png">
+    </head>
+
+    <body>
+        <div id="valentine-card">
+            <div id="heart-animation">❤️</div>
+            <h2>Will you be my Valentine?</h2>
+            <br>
+            <button onclick="response('yes')">Yes</button>
+            <button onclick="response('no')">No</button>
+        </div>
+
+        <script>
+            function response(answer) {
+                if (answer === 'yes') {
+                    alert('Great! Looking forward to our date! 😊');
+                } else {
+                    alert('Oh no! Maybe next time.😞');
+                }
+            }
+        </script>
+
+        <!-- Bootstrap JS files -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+
+</html>

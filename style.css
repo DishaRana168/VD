@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:#f8e8e8; /* #f8e8e8 light pink backgroud color */
+}
+
+#valentine-card { /* can name os Valentine-card */
+    text-align: center;
+    padding: 50px;
+    background-color: #fff; /* #fff White card background color */
+    border-radius: 10px;
+    font-family: Comic 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 0 10px rgb(227, 20, 20);
+}
+
+#heart-animation {
+    font-size: 75px;
+    color: #e74c3c;
+    animation: heartbeat 1.5s infinite;
+}
+
+#question {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+#button-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #ecebe4;
+    color: #590d22;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: #cb10ac;
+}
+
+button:hover {
+    background-color: #ff3852;
+    color: #fff;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
